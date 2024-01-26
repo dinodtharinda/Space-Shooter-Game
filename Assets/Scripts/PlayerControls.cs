@@ -32,15 +32,19 @@ public class PlayerControls : MonoBehaviour
         if (Touch.activeTouches.Count > 0)
         {
 
+
             if (Touch.activeTouches[0].finger.index == 0)
             {
                 Touch myTouch = Touch.activeTouches[0];
                 Vector3 touchPos = myTouch.screenPosition;
+                
+                if(myTouch.tapCount == 1){
+                    Debug.Log("Double Tap");
+                }
 
 #if UNITY_EDITOR
                 if (touchPos.x == Mathf.Infinity)
                     return;
-
 #endif
                 touchPos = mainCam.ScreenToWorldPoint(touchPos);
 
