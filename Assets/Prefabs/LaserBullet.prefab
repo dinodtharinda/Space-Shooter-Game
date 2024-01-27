@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4321997888055920446
+--- !u!1 &2623294339411408069
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6978799640210071736}
-  - component: {fileID: 4926564292065699229}
-  - component: {fileID: 3651672636391076775}
-  - component: {fileID: 7608219071322824077}
-  - component: {fileID: 3980885882037397589}
-  m_Layer: 7
-  m_Name: MeteorThree
+  - component: {fileID: 904697509133851962}
+  - component: {fileID: 5180770613381648777}
+  - component: {fileID: 8402128846922513231}
+  - component: {fileID: 1456880621010621218}
+  - component: {fileID: 1232932303988910730}
+  m_Layer: 8
+  m_Name: LaserBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6978799640210071736
+--- !u!4 &904697509133851962
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4321997888055920446}
+  m_GameObject: {fileID: 2623294339411408069}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.09, y: 7.68, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -4.55, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &4926564292065699229
+--- !u!212 &5180770613381648777
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4321997888055920446}
+  m_GameObject: {fileID: 2623294339411408069}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -78,43 +78,41 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 7452113722515616462, guid: 1b9c25c6453b73c4da2b99a8ed1f5050, type: 3}
+  m_Sprite: {fileID: -3785821674065516436, guid: e4084de7c6959944a85a068231fc5303, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.28, y: 1.26}
+  m_Size: {x: 0.5, y: 1.28}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3651672636391076775
+--- !u!114 &8402128846922513231
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4321997888055920446}
+  m_GameObject: {fileID: 2623294339411408069}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85bf4654b4f8150469aa339b2f4261df, type: 3}
+  m_Script: {fileID: 11500000, guid: 6b26b5fa9aeebfd4ea5c25d947045077, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2
-  rb: {fileID: 7608219071322824077}
-  minSpeed: 8
-  maxSpeed: 15
-  rotateSpeed: 100
---- !u!50 &7608219071322824077
+  speed: 15
+  damage: 1
+  rb: {fileID: 1456880621010621218}
+--- !u!50 &1456880621010621218
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4321997888055920446}
-  m_BodyType: 0
+  m_GameObject: {fileID: 2623294339411408069}
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -133,13 +131,13 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &3980885882037397589
-CircleCollider2D:
+--- !u!70 &1232932303988910730
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4321997888055920446}
+  m_GameObject: {fileID: 2623294339411408069}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -168,4 +166,5 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.54
+  m_Size: {x: 0.47, y: 1.25}
+  m_Direction: 0
