@@ -83,8 +83,8 @@ public class PlayerControls : MonoBehaviour
     private IEnumerator SetBoundaries()
     {
         yield return new WaitForSeconds(0.4f);
-        maxLeft = mainCam.ViewportToWorldPoint(new Vector2(0.15f, 0)).x;
-        maxRight = mainCam.ViewportToWorldPoint(new Vector2(0.85f, 0)).x;
+        maxLeft = mainCam.ViewportToWorldPoint(new Vector2(0.10f, 0)).x;
+        maxRight = mainCam.ViewportToWorldPoint(new Vector2(0.90f, 0)).x;
         maxDown = mainCam.ViewportToWorldPoint(new Vector2(0, 0.05f)).y;
         maxUp = mainCam.ViewportToWorldPoint(new Vector2(0, 0.9f)).y;
     }

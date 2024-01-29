@@ -24,19 +24,22 @@ public class Meteor : Enemy
 
     public override void HurtSequence()
     {
-        base.HurtSequence();
+        
     }
 
     public override void DeathSequence()
     {
-        base.DeathSequence();
+       Destroy(gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D otherColl)
     {
         if (otherColl.CompareTag("Player"))
         {
-            Destroy(otherColl.gameObject);
+            //Destroy(otherColl.gameObject);
+            PlayerStats player = otherColl.GetComponent<PlayerStats>();
+            player.PlayerTakeDamage(damage);
+            Destroy(gameObject);
         }
     }
 
