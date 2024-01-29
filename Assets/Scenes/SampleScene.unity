@@ -555,7 +555,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8.657005
+  orthographic size: 8.666667
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -939,6 +939,7 @@ GameObject:
   - component: {fileID: 786270584}
   - component: {fileID: 786270582}
   - component: {fileID: 786270581}
+  - component: {fileID: 786270585}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -1099,10 +1100,6 @@ PolygonCollider2D:
       - {x: 0.25369018, y: 0.8036846}
       - {x: 0.18160388, y: 0.88474363}
       - {x: 0.10332115, y: 0.906385}
-      - {x: 0.096347846, y: 0.98999995}
-      - {x: 0.04685991, y: 1.0621163}
-      - {x: -0.03, y: 1.0699999}
-      - {x: -0.07423189, y: 1.0105119}
       - {x: -0.08481658, y: 0.91055334}
       - {x: -0.17592394, y: 0.8418435}
       - {x: -0.24948792, y: 0.77211547}
@@ -1182,6 +1179,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   healthFill: {fileID: 439256905}
+  explosionPrefab: {fileID: 2110975690195015115, guid: 605c84bff075b194891dff4c29d58495, type: 3}
+  anim: {fileID: 786270585}
+--- !u!95 &786270585
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786270577}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7214cb1e0363ac94bb19ab3e8d877f9f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &851656972
 GameObject:
   m_ObjectHideFlags: 0

@@ -19,7 +19,7 @@ public class Meteor : Enemy
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0,0,rotateSpeed*Time.deltaTime);
+        transform.Rotate(0, 0, rotateSpeed * Time.deltaTime);
     }
 
     public override void HurtSequence()
@@ -30,6 +30,7 @@ public class Meteor : Enemy
 
     public override void DeathSequence()
     {
+        Instantiate(explosionPrefab, transform.position, transform.rotation);
         Destroy(gameObject);
     }
 
@@ -40,6 +41,7 @@ public class Meteor : Enemy
             // Destroy(otherColl.gameObject);
             PlayerStats player = otherColl.GetComponent<PlayerStats>();
             player.PlayerTakeDamage(damage);
+            Instantiate(explosionPrefab, transform.position, transform.rotation);
             Destroy(gameObject);
         }
     }
