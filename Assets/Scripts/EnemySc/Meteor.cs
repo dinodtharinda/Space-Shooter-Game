@@ -11,7 +11,7 @@ public class Meteor : Enemy
     [SerializeField] private float rotateSpeed;
     void Start()
     {
-        speed = Random.Range(minSpeed,maxSpeed);
+        speed = Random.Range(minSpeed, maxSpeed);
 
         rb.velocity = Vector2.down * speed;
     }
@@ -19,7 +19,7 @@ public class Meteor : Enemy
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0,0,rotateSpeed*Time.deltaTime);
+        transform.Rotate(0, 0, rotateSpeed * Time.deltaTime);
     }
 
     public override void HurtSequence()
@@ -29,18 +29,22 @@ public class Meteor : Enemy
 
     public override void DeathSequence()
     {
-        base.DeathSequence();
+        Destroy(gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D otherColl)
     {
         if (otherColl.CompareTag("Player"))
         {
-            Destroy(otherColl.gameObject);
+            PlayerStats player = otherColl.GetComponent<PlayerStats>();
+            player.PlayerTakeDamage(damage);
+            Destroy(gameObject);
         }
+
     }
 
-    private void OnBecameInvisible() {
+    private void OnBecameInvisible()
+    {
         Destroy(gameObject);
     }
 }

@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] protected float health;
     [SerializeField] protected Rigidbody2D rb;
-
+    [SerializeField] protected float damage;
     void Start()
     {
 
