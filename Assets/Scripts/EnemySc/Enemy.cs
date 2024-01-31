@@ -8,11 +8,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected float health;
     [SerializeField] protected Rigidbody2D rb;
     [SerializeField] protected float damage;
-    void Start()
-    {
-
-    }
-
+    [SerializeField] protected GameObject explosionPrefab;
+   
     public void TakeDamage(float dmg)
     {
         health -= dmg;

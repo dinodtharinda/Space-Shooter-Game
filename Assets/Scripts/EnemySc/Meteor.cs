@@ -30,6 +30,7 @@ public class Meteor : Enemy
     public override void DeathSequence()
     {
         Destroy(gameObject);
+        Instantiate(explosionPrefab,transform.position,transform.rotation);
     }
 
     private void OnTriggerEnter2D(Collider2D otherColl)
