@@ -33,6 +33,11 @@ public class PurpleEnemy : Enemy
     {
         Destroy(gameObject);
     }
+    public override void DeathSequence()
+    {
+        Destroy(gameObject);
+        Instantiate(explosionPrefab, transform.position, transform.rotation);
+    }
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -41,6 +46,8 @@ public class PurpleEnemy : Enemy
         {
             collision.GetComponent<PlayerStats>().PlayerTakeDamage(damage);
             Destroy(gameObject);
+            Instantiate(explosionPrefab, transform.position, transform.rotation);
+            
         }
     }
 }
