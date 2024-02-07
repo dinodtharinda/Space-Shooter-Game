@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2910515353294229469}
   - component: {fileID: 3737487208055776888}
   - component: {fileID: 4973376717241861660}
-  - component: {fileID: 7286606639258476993}
+  - component: {fileID: 5130707846796313156}
   m_Layer: 9
   m_Name: PurpleBullet
   m_TagString: Untagged
@@ -152,7 +152,7 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.26
---- !u!114 &7286606639258476993
+--- !u!114 &5130707846796313156
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

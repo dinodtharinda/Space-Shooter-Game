@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class purpleBullet : MonoBehaviour
+public class PurpleBullet : MonoBehaviour
 {
     [SerializeField] private float damege;
     [SerializeField] private float speed;
