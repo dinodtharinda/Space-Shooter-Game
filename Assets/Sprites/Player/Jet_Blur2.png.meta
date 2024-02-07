@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Jet_Blur2_0: 9176721212461436353
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
