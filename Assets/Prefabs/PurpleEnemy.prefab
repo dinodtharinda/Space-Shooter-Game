@@ -139,6 +139,7 @@ MonoBehaviour:
   health: 3
   rb: {fileID: 6811515314262790125}
   damage: 2
+  explosionPrefab: {fileID: 221910227418371519, guid: a24d067e1e6c1754da3cca03af86b182, type: 3}
   bulletPrefab: {fileID: 1325316986488047160, guid: 326eb76c7f0e9254c80ba5997d054a0b, type: 3}
   leftCanon: {fileID: 2775520562968253134}
   rightCanon: {fileID: 2300078856679596313}
