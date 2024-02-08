@@ -9,6 +9,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected float damage;
     [SerializeField] protected GameObject explosionPrefab;
     [SerializeField] protected Animator anim;
+    [Header("Score"),SerializeField]
+    protected int scoreValue;
     void Start()
     {
 
@@ -37,6 +39,6 @@ public class Enemy : MonoBehaviour
 
     public virtual void DeathSequence()
     {
-
+        EndGameManager.endManager.UpdateScore(scoreValue);
     }
 }
