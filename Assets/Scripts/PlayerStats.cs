@@ -12,8 +12,11 @@ public class PlayerStats : MonoBehaviour
     private float health;
     void Start()
     {
+        if (EndGameManager.endManager.gameOver == true)
+            return;
         health = maxHealth;
         healthFill.fillAmount = health / maxHealth;
+        EndGameManager.endManager.gameOver = false;
     }
 
     public void PlayerTakeDamage(float damage)
