@@ -28,6 +28,6 @@ public class PlayerShooting : MonoBehaviour
 
     private void Shoot()
     {
-        Instantiate(laserBullet, basicShootPoint.position, Quaternion.identity);
+        Instantiate(laserBullet, basicShootPoint.position, transform.rotation);
     }
 }

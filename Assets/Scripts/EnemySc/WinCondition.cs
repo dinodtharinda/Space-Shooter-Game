@@ -16,6 +16,8 @@ public class WinCondition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (EndGameManager.endManager.gameOver == true)
+            return;
         timer += Time.deltaTime;
         if (timer >= possibleWinTime)
         {
@@ -26,8 +28,8 @@ public class WinCondition : MonoBehaviour
             EndGameManager.endManager.StartResolveSequence();
             gameObject.SetActive(false);
             //create a function that will check if the player survived the last spawned enemy/meteor
-                // win or lose screen
-                    //GAME MANAGER
+            // win or lose screen
+            //GAME MANAGER
         }
 
     }
