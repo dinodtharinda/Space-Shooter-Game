@@ -9,3 +9,13 @@
 52	1150	7279134077571803	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	b7bc922b898ad802
 2	1188	7279134077994339	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	fb5ef8c75dd3687d
 1188	1424	7279134079258709	C:/Users/dinod/Documents/Projects/Dinod/Unity/Space Shooter Mobile/Library/PramData/AndroidApplicationController/Cache/com.DefaultCompany.SpaceShooterMobile/gradle-project/unityLibrary/build/intermediates/cxx/Debug/3q11453y/obj/arm64-v8a/libgame.so	b1d992cbb1e3a450
+47	265	7291774246021455	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	3b118ae462a326cf
+265	611	7291774248709173	C:/Users/dinod/Documents/Projects/Dinod/Unity/Space Shooter Mobile/Library/PramData/AndroidApplicationController/Cache/com.DefaultCompany.SpaceShooterMobile/gradle-project/unityLibrary/build/intermediates/cxx/Debug/3q11453y/obj/arm64-v8a/libswappywrapper.so	6598db29a7f1faec
+34	854	7291774251850574	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	67348669db77a51b
+20	863	7291774251957698	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	fc4be24a67cb798c
+40	888	7291774252236304	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	764a5fb979ad6fbe
+0	901	7291774252305147	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	82318bc21650a6d0
+6	927	7291774252573345	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	23e5fa67b15f842
+28	971	7291774252954711	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	b7bc922b898ad802
+14	981	7291774253076124	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	fb5ef8c75dd3687d
+981	1180	7291774254450291	C:/Users/dinod/Documents/Projects/Dinod/Unity/Space Shooter Mobile/Library/PramData/AndroidApplicationController/Cache/com.DefaultCompany.SpaceShooterMobile/gradle-project/unityLibrary/build/intermediates/cxx/Debug/3q11453y/obj/arm64-v8a/libgame.so	b1d992cbb1e3a450
