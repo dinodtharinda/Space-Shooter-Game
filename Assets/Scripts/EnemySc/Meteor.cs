@@ -29,6 +29,7 @@ public class Meteor : Enemy
 
     public override void DeathSequence()
     {
+        base.DeathSequence();
         Destroy(gameObject);
         Instantiate(explosionPrefab, transform.position, transform.rotation);
     }
