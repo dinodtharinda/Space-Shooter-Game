@@ -215,7 +215,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FireAnimation_0: -5684234420487004805
+      FireAnimation_1: 6254599467804351034
+      FireAnimation_2: -7315016514499560158
+      FireAnimation_3: -7583889600330867629
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
