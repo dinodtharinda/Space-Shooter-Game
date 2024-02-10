@@ -12,13 +12,18 @@ public class EndGameManager : MonoBehaviour
     private PanelController panelController;
     private TextMeshProUGUI scoreTextConmponent;
     private int score;
+    [HideInInspector]
+    public string lvlUnlock = "LevelUnlock";
     private void Awake()
     {
-        if(endManager == null){
-        endManager = this;
-        DontDestroyOnLoad(gameObject);
+        if (endManager == null)
+        {
+            endManager = this;
+            DontDestroyOnLoad(gameObject);
 
-        }else{
+        }
+        else
+        {
             Destroy(gameObject);
         }
     }
@@ -36,9 +41,10 @@ public class EndGameManager : MonoBehaviour
     {
 
     }
-    public void UpdateScore(int addScore){
-        score+= addScore;
-        scoreTextConmponent.text = "Score: "+score.ToString();
+    public void UpdateScore(int addScore)
+    {
+        score += addScore;
+        scoreTextConmponent.text = "Score: " + score.ToString();
     }
     public void ResolveGame()
     {
@@ -53,24 +59,31 @@ public class EndGameManager : MonoBehaviour
     }
     public void WinGame()
     {
-        //activate the panel
-        //unlock the next level
-        //score
+
         ScoreSet();
+      
         panelController.ActivateWin();
+        int nextLevel = SceneManager.GetActiveScene().buildIndex + 1;
+        if (nextLevel > PlayerPrefs.GetInt(lvlUnlock, 0))
+        {
+            PlayerPrefs.SetInt(lvlUnlock, nextLevel);
+        }
     }
 
     public void LoseGame()
     {
         ScoreSet();
+       
         panelController.ActivateLose();
     }
 
-    private void ScoreSet(){
-        PlayerPrefs.SetInt("Score"+SceneManager.GetActiveScene().name,score);
-        int highScore = PlayerPrefs.GetInt("HighScore"+SceneManager.GetActiveScene().name,0);
-        if(score>highScore){
-            PlayerPrefs.SetInt("HighScore"+SceneManager.GetActiveScene().name,score);
+    private void ScoreSet()
+    {
+        PlayerPrefs.SetInt("Score" + SceneManager.GetActiveScene().name, score);
+        int highScore = PlayerPrefs.GetInt("HighScore" + SceneManager.GetActiveScene().name, 0);
+        if (score > highScore)
+        {
+            PlayerPrefs.SetInt("HighScore" + SceneManager.GetActiveScene().name, score);
             score = 0;
         }
     }
@@ -79,7 +92,8 @@ public class EndGameManager : MonoBehaviour
     {
         panelController = pC;
     }
-    public void RegisterScoreText(TextMeshProUGUI scoreTextComp){
+    public void RegisterScoreText(TextMeshProUGUI scoreTextComp)
+    {
         scoreTextConmponent = scoreTextComp;
     }
 }
