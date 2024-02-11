@@ -26,10 +26,7 @@ public class EndGameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    void Start()
-    {
 
-    }
 
     public void UpdateScore(int addScore){
         score += addScore;
