@@ -21,4 +21,9 @@ public class ButtonController : MonoBehaviour
         // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         FadeCanvas.fader.FaderLoadInt(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public void LoadNextLevel()
+    {
+        FadeCanvas.fader.FaderLoadInt(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 }
