@@ -16,7 +16,121 @@ EditorBuildSettings:
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Level 2.unity
-    guid: b16e5f897ddd7744fa86e895c82dcec0
+    guid: 6bc75ea882bea7c4a9218a5aa57b97b9
+  - enabled: 1
+    path: Assets/Scenes/Level 3.unity
+    guid: d156acd443bd1174394c57419f6fdc48
+  - enabled: 1
+    path: Assets/Scenes/Level 4.unity
+    guid: d2d96a439a65ada488eea7b86d2f82db
+  - enabled: 1
+    path: Assets/Scenes/Level 5.unity
+    guid: ad513509428c4cc40b8a63a5b59e2414
+  - enabled: 1
+    path: Assets/Scenes/Level 6.unity
+    guid: 42321e06801caad4ba0a5ffeb05a413e
+  - enabled: 1
+    path: Assets/Scenes/Level 7.unity
+    guid: 16448832d60d12a40a78c6b103d03404
+  - enabled: 1
+    path: Assets/Scenes/Level 8.unity
+    guid: 5100ccdf13491304097f31f634d2d06b
+  - enabled: 1
+    path: Assets/Scenes/Level 9.unity
+    guid: 701085deb5f12d94d81e3ae49657f108
+  - enabled: 1
+    path: Assets/Scenes/Level 10.unity
+    guid: 8c9a2a877ca825e45b924cadf4fc4175
+  - enabled: 1
+    path: Assets/Scenes/Level 11.unity
+    guid: 6e62bc77acfd44e48a1da3403af1bcc4
+  - enabled: 1
+    path: Assets/Scenes/Level 12.unity
+    guid: 1b6abebb7cad1954bad21a052eed1702
+  - enabled: 1
+    path: Assets/Scenes/Level 13.unity
+    guid: a1f65492121cdb54a83e50444f1e7b01
+  - enabled: 1
+    path: Assets/Scenes/Level 14.unity
+    guid: 7c971bfb8ac0ab547aab0e37b209b4bd
+  - enabled: 1
+    path: Assets/Scenes/Level 15.unity
+    guid: bc35ca0120021eb4189931bccab54671
+  - enabled: 1
+    path: Assets/Scenes/Level 16.unity
+    guid: 7d9933793039dfa49b9cce07443ce71d
+  - enabled: 1
+    path: Assets/Scenes/Level 17.unity
+    guid: 9e6cee98cd4dc4d47ba4f76d4391d690
+  - enabled: 1
+    path: Assets/Scenes/Level 18.unity
+    guid: 8857b0571e50f3841a340b6e5d7f614f
+  - enabled: 1
+    path: Assets/Scenes/Level 19.unity
+    guid: 41459b646320bdc4ab042be1facf8ee2
+  - enabled: 1
+    path: Assets/Scenes/Level 20.unity
+    guid: 7b88917bcd62c844c9e75e05fd39d240
+  - enabled: 1
+    path: Assets/Scenes/Level 21.unity
+    guid: 822472c7da0ee9342937bac3726df3fa
+  - enabled: 1
+    path: Assets/Scenes/Level 22.unity
+    guid: a4636a1631d79334aae492337c5781fd
+  - enabled: 1
+    path: Assets/Scenes/Level 23.unity
+    guid: 16ac644726cea8b4cb7600ede77e11b9
+  - enabled: 1
+    path: Assets/Scenes/Level 24.unity
+    guid: add38a2d91b6d934f83ea3be02499a7c
+  - enabled: 1
+    path: Assets/Scenes/Level 25.unity
+    guid: a8e2b5eb99219dc418c381d1f3a3f0ec
+  - enabled: 1
+    path: Assets/Scenes/Level 26.unity
+    guid: d8deba962642ee84cbcc81138a08ab45
+  - enabled: 1
+    path: Assets/Scenes/Level 27.unity
+    guid: 78331bc4b59febe44a97271d3d40fd51
+  - enabled: 1
+    path: Assets/Scenes/Level 28.unity
+    guid: 9b5a09fbb29fdd84a99f78ef5607e41e
+  - enabled: 1
+    path: Assets/Scenes/Level 29.unity
+    guid: 4c096136cf826d644a41cc7595d586e4
+  - enabled: 1
+    path: Assets/Scenes/Level 30.unity
+    guid: 65eba56b8e927af41a1e69eb177a7183
+  - enabled: 1
+    path: Assets/Scenes/Level 31.unity
+    guid: 4d4c8124d9620f64ab46bb9fa78928ff
+  - enabled: 1
+    path: Assets/Scenes/Level 32.unity
+    guid: 4032a1d9dafb34e4cb76de8f66c8c2df
+  - enabled: 1
+    path: Assets/Scenes/Level 33.unity
+    guid: 9873e3ea347458941bf9940b17b517eb
+  - enabled: 1
+    path: Assets/Scenes/Level 34.unity
+    guid: 5b7f20f5ab4028a4db429b522cc37eba
+  - enabled: 1
+    path: Assets/Scenes/Level 35.unity
+    guid: e1a48e603c1a3d747a1497813f07643c
+  - enabled: 1
+    path: Assets/Scenes/Level 36.unity
+    guid: ece3563cec0f64b44b2623ebe1ae537e
+  - enabled: 1
+    path: Assets/Scenes/Level 37.unity
+    guid: e71325cef4e774a49ace2b4b8d3a4ffa
+  - enabled: 1
+    path: Assets/Scenes/Level 38.unity
+    guid: 093d656951e61f74bb64e0d36da7113d
+  - enabled: 1
+    path: Assets/Scenes/Level 39.unity
+    guid: 999777ffcb1085c49bb14eeeacea6b3b
+  - enabled: 1
+    path: Assets/Scenes/Level 40.unity
+    guid: 1fd3fd03b75670e4fb87c426e4122e40
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: ed3d43a2a35c5d44a803957d1a73634d, type: 2}
   m_UseUCBPForAssetBundles: 0

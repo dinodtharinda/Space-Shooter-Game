@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ButtonGenerate : MonoBehaviour
@@ -17,7 +18,7 @@ public class ButtonGenerate : MonoBehaviour
     private void Awake()
     {
         int unlockedLvl = PlayerPrefs.GetInt("LevelUnlock", firstLevelBuildIndex);
-        int sceneCount = UnityEditor.SceneManagement.EditorSceneManager.sceneCountInBuildSettings - firstLevelBuildIndex;
+        int sceneCount =  SceneManager.sceneCountInBuildSettings;
 
         for (int i = 0; i < sceneCount; i++)
         {

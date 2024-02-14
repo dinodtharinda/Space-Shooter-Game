@@ -12,7 +12,7 @@ public class PlayerStats : MonoBehaviour
     private float health;
     void Start()
     {
-        if (EndGameManager.endManager.gameOver == true)
+        if (EndGameManager.endManager.gameOver == false)
             return;
         health = maxHealth;
         healthFill.fillAmount = health / maxHealth;
