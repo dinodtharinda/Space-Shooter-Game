@@ -8,6 +8,7 @@ public class Meteor : Enemy
     [SerializeField] private float minSpeed;
     [SerializeField] private float maxSpeed;
     [SerializeField] private float rotateSpeed;
+    [SerializeField] private ScriptableObjectExample powerUpSpawner;
 
     private float speed;
     void Start()
@@ -31,7 +32,12 @@ public class Meteor : Enemy
     public override void DeathSequence()
     {
         base.DeathSequence();
+
         Instantiate(explosionPrefab, transform.position, transform.rotation);
+        if (powerUpSpawner != null)
+        {
+            powerUpSpawner.SpawnPowerUp(transform.position);
+        }
         Destroy(gameObject);
     }
 

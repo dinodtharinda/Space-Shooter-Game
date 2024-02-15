@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f8f551cd6ce5c41826b43bab559526, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleWinTime: 120
+  possibleWinTime: 40
   spawner:
   - {fileID: 0}
   - {fileID: 0}

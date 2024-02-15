@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &10142702 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1613135063948089319, guid: 4d8b59ba002450b44bb27455b7d7bd68, type: 3}
+  m_PrefabInstance: {fileID: 8089922103617925713}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &113516369
 GameObject:
   m_ObjectHideFlags: 3
@@ -416,7 +421,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.987342
+  orthographic size: 8.666667
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1118,6 +1123,11 @@ Transform:
   - {fileID: 511179060}
   m_Father: {fileID: 1785291718}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1136413896 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8340666492900758040, guid: 4d8b59ba002450b44bb27455b7d7bd68, type: 3}
+  m_PrefabInstance: {fileID: 8089922103617925713}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1218531633 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4865001026135938232, guid: ae3de4e41b7168f4c856cecc5215f25f, type: 3}
@@ -1566,6 +1576,11 @@ Transform:
   - {fileID: 570483507}
   m_Father: {fileID: 1785291718}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2092351470 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6983848910245327128, guid: 4d8b59ba002450b44bb27455b7d7bd68, type: 3}
+  m_PrefabInstance: {fileID: 8089922103617925713}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1433489898306285276
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1580,7 +1595,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5116897088274398460, guid: bcff634fc7b557c41a79482e9b68c4d3, type: 3}
       propertyPath: possibleWinTime
-      value: 5
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 5116897088274398460, guid: bcff634fc7b557c41a79482e9b68c4d3, type: 3}
+      propertyPath: spawner.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5116897088274398460, guid: bcff634fc7b557c41a79482e9b68c4d3, type: 3}
       propertyPath: 'spawner.Array.data[0]'
@@ -1643,10 +1662,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2497349289880859490, guid: 85d2468deae221d44885216c80563596, type: 3}
+      propertyPath: shootingIntervel
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2841529569657052833, guid: 85d2468deae221d44885216c80563596, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3611385576386031779, guid: 85d2468deae221d44885216c80563596, type: 3}
+      propertyPath: 'shieldBase.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1136413896}
+    - target: {fileID: 3611385576386031779, guid: 85d2468deae221d44885216c80563596, type: 3}
+      propertyPath: 'shieldBase.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2092351470}
+    - target: {fileID: 3611385576386031779, guid: 85d2468deae221d44885216c80563596, type: 3}
+      propertyPath: 'shieldBase.Array.data[2]'
+      value: 
+      objectReference: {fileID: 10142702}
     - target: {fileID: 7511833058668186878, guid: 85d2468deae221d44885216c80563596, type: 3}
       propertyPath: healthFill
       value: 
@@ -1704,6 +1739,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1762783494}
     m_Modifications:
+    - target: {fileID: 2682824267943958014, guid: ae3de4e41b7168f4c856cecc5215f25f, type: 3}
+      propertyPath: spawnTime
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 4865001026135938232, guid: ae3de4e41b7168f4c856cecc5215f25f, type: 3}
       propertyPath: m_Name
       value: MeteorSpawner
@@ -2084,6 +2123,10 @@ PrefabInstance:
     - target: {fileID: 7522193626303573224, guid: 7621d5b61c9668947bd0b8dc538012a8, type: 3}
       propertyPath: m_Name
       value: EnemySpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 7522193626303573224, guid: 7621d5b61c9668947bd0b8dc538012a8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
