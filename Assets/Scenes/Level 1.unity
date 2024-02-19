@@ -1452,10 +1452,13 @@ GameObject:
   - component: {fileID: 1655688346}
   - component: {fileID: 1655688345}
   - component: {fileID: 1655688353}
+  - component: {fileID: 1655688357}
   - component: {fileID: 1655688354}
+  - component: {fileID: 1655688356}
+  - component: {fileID: 1655688355}
   m_Layer: 7
   m_Name: PurpleBoss
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1488,6 +1491,7 @@ MonoBehaviour:
   bossEnter: {fileID: 1655688345}
   bossFire: {fileID: 1655688353}
   bossSpecial: {fileID: 1655688354}
+  bossDeath: {fileID: 1655688357}
   test: 1
   testState: 0
 --- !u!66 &1655688347
@@ -1528,9 +1532,41 @@ CompositeCollider2D:
   m_GeometryType: 0
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths: []
+  m_ColliderPaths:
+  - m_Collider: {fileID: 1655688349}
+    m_ColliderPaths:
+    - - X: 12400000
+        Y: 7185797
+      - X: -12400000
+        Y: 7185797
+      - X: -12400000
+        Y: -1043534
+      - X: 12400000
+        Y: -1043534
+  - m_Collider: {fileID: 1655688348}
+    m_ColliderPaths:
+    - - X: 2970417
+        Y: 11499999
+      - X: -2864468
+        Y: 11499999
+      - X: -2864468
+        Y: -10069673
+      - X: 2970417
+        Y: -10069673
   m_CompositePaths:
-    m_Paths: []
+    m_Paths:
+    - - {x: 0.2970124, y: -1.0069673}
+      - {x: 0.2970711, y: -0.1043534}
+      - {x: 1.24, y: -0.1043241}
+      - {x: 1.2399707, y: 0.7185797}
+      - {x: 0.2970417, y: 0.7186091}
+      - {x: 0.2970124, y: 1.1499999}
+      - {x: -0.2864468, y: 1.1499707}
+      - {x: -0.2864762, y: 0.7185797}
+      - {x: -1.24, y: 0.7185504}
+      - {x: -1.2399707, y: -0.1043534}
+      - {x: -0.2864468, y: -0.1043828}
+      - {x: -0.2864175, y: -1.0069673}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
@@ -1542,7 +1578,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1655688344}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -1588,7 +1624,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1655688344}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -1764,6 +1800,59 @@ MonoBehaviour:
   waitTime: 5
   specialBullet: {fileID: 8412233738524551784, guid: 9d9f780e54be57643be3ad22380904ba, type: 3}
   shootingPoint: {fileID: 401373151}
+--- !u!114 &1655688355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655688344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3baf8e1d607d21d438e50bef3b59bf0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
+  rb: {fileID: 1655688350}
+  damage: 2
+  explosionPrefab: {fileID: 1077835439754140408, guid: 1cd3c41b50e55d14986a48452ba21f3d, type: 3}
+  anim: {fileID: 1655688356}
+  scoreValue: 100
+  bossController: {fileID: 1655688346}
+--- !u!95 &1655688356
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655688344}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cb7199eb929b84546a48c8a2b8749268, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1655688357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655688344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c46274f06e07ce45b424e329710c04b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1710009825 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7522193626303573224, guid: 7621d5b61c9668947bd0b8dc538012a8, type: 3}
@@ -2156,7 +2245,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2841529569657052833, guid: 85d2468deae221d44885216c80563596, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3611385576386031779, guid: 85d2468deae221d44885216c80563596, type: 3}
       propertyPath: 'shieldBase.Array.data[0]'
